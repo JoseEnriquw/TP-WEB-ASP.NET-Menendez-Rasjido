@@ -1,0 +1,61 @@
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\bin\Debug\Bussines.dll
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\bin\Debug\Dominio.dll
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\bin\Debug\Bussines.pdb
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\bin\Debug\Dominio.pdb
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\obj\Debug\Presentacion.Window.resources
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Jose\source\repos\SystemSimplex\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\bin\Presentacion.resources.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\es-419\Presentacion.resources.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Bussines.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Dominio.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Bussines.pdb
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Dominio.pdb
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.systemSimplex.resources
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.systemSimplex.bin.resources
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.systemSimplex.es-419.resources
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\bin\Presentacion.resources.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\es-419\Presentacion.resources.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\bin\Presentacion.resources.dll
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\es-419\Presentacion.resources.dll
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Bussines.dll
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Dominio.dll
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Bussines.pdb
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\bin\Debug\Dominio.pdb
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.systemSimplex.resources
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.systemSimplex.bin.resources
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.systemSimplex.es-419.resources
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\bin\Presentacion.resources.dll
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\es-419\Presentacion.resources.dll
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.Detalles.resources
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Presentacion\obj\Debug\Presentacion.Detalles.resources

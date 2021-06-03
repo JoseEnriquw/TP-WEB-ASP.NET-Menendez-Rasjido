@@ -1,0 +1,18 @@
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Bussines\bin\Debug\Bussines.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Bussines\bin\Debug\Bussines.pdb
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Bussines\bin\Debug\Dominio.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Bussines\bin\Debug\Dominio.pdb
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Business.csproj.CopyComplete
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Bussines.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Bussines.pdb
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Bussines\bin\Debug\Bussines.dll
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Bussines\bin\Debug\Bussines.pdb
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Bussines\bin\Debug\Dominio.dll
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Bussines\bin\Debug\Dominio.pdb
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Business.csproj.CopyComplete
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Bussines.dll
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Bussines.pdb
+C:\Users\Jose\source\repos\Actividad-2-PrograIII\SystemSimplex\Bussines\obj\Debug\Business.csprojAssemblyReference.cache

@@ -1,0 +1,11 @@
+C:\Users\Jose\source\repos\SystemSimplex\Dominio\bin\Debug\Dominio.dll
+C:\Users\Jose\source\repos\SystemSimplex\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Jose\source\repos\SystemSimplex\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\SystemSimplex\Dominio\obj\Debug\Dominio.dll
+C:\Users\Jose\source\repos\SystemSimplex\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dominio\bin\Debug\Dominio.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dominio\obj\Debug\Dominio.dll
+C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dominio\obj\Debug\Dominio.pdb
