@@ -10,8 +10,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+    margin: 0;
 }
+
+
 article,
 aside,
 details,
@@ -6831,4 +6833,175 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+
+
+/*PRODUCTOS DEL CATALOGO!!!*/
+.card {
+    background: #34e483;
+    margin-bottom: 30px;
+    transition: .5s;
+    border: 5px solid #000;
+    border-radius: .55rem;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    padding: 10px;
+}
+.card-img-top {
+    margin: 9px;
+    background: #fff;
+    height: 90%;
+    width: 90%;
+    border: 5px solid #000;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.card-text-title{
+    margin-top: auto;
+    text-align:center;
+    color: #fff;
+}
+.cart-btn-primary {
+    display: inline-flex;
+    width: 20%;
+}
+.cart-img-primary {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.cart-img-secundary {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card-img-top:hover{
+    margin: 3px;
+    background: #fff;
+    height: 96%;
+    width: 96%;
+    border: 5px solid #008d18;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: -1px;
+    margin-right: -1px;
+}
+.cart-btn-primary:hover {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/*DETALLES DEL PRODUCTO*/
+.pro-img-details {
+    margin-left: -15px;
+}
+.pro-d-title {
+    font-size: 30px;
+    margin-top: 0;
+}
+.product_meta {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    margin: 15px 0;
+}
+.product_meta span {
+    display: block;
+    margin-bottom: 10px;
+}
+.quantity {
+    width: 120px;
+}
+.pro-img-list {
+    margin: 10px 0 0 -15px;
+    width: 100%;
+    display: inline-block;
+}
+.pro-img-list a {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*CARRITO DE COMPRAS*/
+.img-cart {
+    display: block;
+    max-width: 50px;
+    height: auto;
+
+}
+.carritoPanel {
+    border: 5px solid #000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.panel-heading {
+    background: #000;
+    color: #34e483;
+    border-bottom: 5px solid #000;
+}
+
+
+
+table {
+    display: inline-block;
+}
+table tr td {
+    border: 1px solid #FFFFFF;
+}
+table tr th {
+    background: #34e483;
+}
+.cart-item-list{
+    width: 15px;
+}
+
+
+/*pestaña inicial*/
+.navbar-brand a{
+    color: #34e483;
+}
+.jumbotron {
+    background: url("https://i.gifer.com/1Fvo.gif");
+    background-size: cover;
+    color: #fff;
+}
+.jumbotron h1 {
+    color: #34e483; 
+    font-size: 80px;
+}
+.promtext {
+    padding-bottom: 40px;
+}
+.single_event {
+    margin-bottom: 30px;
+}
+.single_event .event_thumb img {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single_event .event_details {
+    background: rgba(0, 80, 71, 0.5);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 275px;
+    padding: 30px 25px;
+    color: #ffffff;
+}
+.single_event .event_details .date span {
+    display: block;
+    color: #fdc632;
+    
+    font-size: 28px;
+    font-weight: 500;
+}
+.single_event:hover img {
+    transform: scale(1.1);
+}
+.single_event:hover h4 a {
+    color: #fdc632;
+}
