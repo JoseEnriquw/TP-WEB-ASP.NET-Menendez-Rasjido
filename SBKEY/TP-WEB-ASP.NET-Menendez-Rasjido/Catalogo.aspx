@@ -11,7 +11,7 @@
     <div class="col-lg-3 col-md-4 col-sm-12">
 
         <div class="card">
-            <img src="https://media.tenor.com/images/bcb63018f904222a7f17e0532a517269/tenor.gif" class="card-img-top" alt="..." />
+            <img src="https://imagenes.20minutos.es/files/og_thumbnail/uploads/imagenes/2021/03/02/ps5.jpeg" class="card-img-top" alt="..." />
             <div class="card-body">
                 <h3 class="card-text-title">Producto 1</h3>
                 <h5 class="card-text">Descripcion bla bla bla. Compralo plss</h5>

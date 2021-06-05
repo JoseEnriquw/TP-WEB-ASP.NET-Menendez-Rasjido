@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Detalles de Productos.aspx.cs" Inherits="TP_WEB_ASP.NET_Menendez_Rasjido.Detalles_de_Productos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>DETALLES DEL PRODUCTO</h1>
+    <div class="jumbotron">
+        <h1>CONOCE TU PRODUCTO</h1>
+        <p class="lead">Agrega, modifica y elige tus productos favoritos.</p>
+    </div>
 
     <div class="container bootdey">
         <div class="col-md-12">
@@ -8,21 +11,7 @@
                 <div class="panel-body">
                     <div class="col-md-6">
                         <div class="pro-img-details">
-                            <img src="https://via.placeholder.com/550x380/FFB6C1/000000" alt="">
-                        </div>
-                        <div class="pro-img-list">
-                            <a href="#">
-                            <img src="https://via.placeholder.com/115x100/87CEFA/000000" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/115x100/FF7F50/000000" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/115x100/20B2AA/000000" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="https://via.placeholder.com/120x100/20B2AA/000000" alt="">
-                        </a>
+                            <img class="principal-img" src="https://via.placeholder.com/550x380/FFB6C1/000000" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">

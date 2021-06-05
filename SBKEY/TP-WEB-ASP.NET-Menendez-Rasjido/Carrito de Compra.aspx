@@ -47,7 +47,7 @@
                                     <td>
  
                                         <input class="form-control" type="text" value="1">
-                                        <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://lh3.googleusercontent.com/proxy/-s9liO0VVbQaXXah0yxaT-xegu5IvIRO93xY2buHCHF5xrdDDvZ0aZjQc6Svn4IdaKWZHv6flYKI2Ajx2mnqodPPpfBoQaDZCp9gT3s2a67G" alt="..." /> </a>
+                                        <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>
                                         <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png" alt="..." /> </a>
   
                                     </td>
@@ -65,7 +65,7 @@
                                     <td>
 
                                         <input class="form-control" type="text" value="1">
-                                        <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://lh3.googleusercontent.com/proxy/-s9liO0VVbQaXXah0yxaT-xegu5IvIRO93xY2buHCHF5xrdDDvZ0aZjQc6Svn4IdaKWZHv6flYKI2Ajx2mnqodPPpfBoQaDZCp9gT3s2a67G" alt="..." /> </a>
+                                        <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>
                                         <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png" alt="..." /> </a>
 
                                     </td>
