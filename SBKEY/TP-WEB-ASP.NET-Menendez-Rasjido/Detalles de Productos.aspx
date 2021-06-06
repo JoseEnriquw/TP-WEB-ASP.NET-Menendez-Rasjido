@@ -6,22 +6,23 @@
     </div>
 
     <div class="container bootdey">
+
         <div class="col-md-12">
             <section class="panel">
                 <div class="panel-body">
                     <div class="col-md-6">
                         <div class="pro-img-details">
-                            <img class="principal-img" src="https://via.placeholder.com/550x380/FFB6C1/000000" alt="">
+                            <img class="principal-img" src="<% =detalleArt.URLimagen %>" onerror="this.src='https://img.icons8.com/pastel-glyph/452/file-not-found--v2.png'" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h4 class="pro-d-title">Nombre del producto</h4>
-                        <p>Descripcion bla bla bla. Compralo plss</p>
+                        <h4 class="pro-d-title"><% =detalleArt.Nombre %></h4>
+                        <p><% =detalleArt.Descripcion %></p>
                         <div class="product_meta">
-                            <span class="posted_in"> <strong>Categoria:</strong> <a rel="tag" href="#">Jackets</a></span>
-                            <span class="tagged_as"><strong>Tags:</strong> <a rel="tag" href="#">mens</a></span>
+                            <span class="posted_in"> <strong>Categoria: </strong> <a rel="tag" href="#"><% =detalleArt.Categoria %></a></span>
+                            <span class="tagged_as"><strong>Marca:</strong> <a rel="tag" href="#"><% =detalleArt.Marca %></a></span>
                         </div>
-                        <div class="m-bot15"> <strong>Precio: </strong> <span class="amount">$99.99</span></div>
+                        <div class="m-bot15"> <strong>Precio: </strong> <span class="amount">$<% =detalleArt.precio %></span></div>
                             <div class="form-group">
                                 <label>Cantidad</label>
                                 <input type="quantiy" placeholder="1" class="form-control quantity">
@@ -34,4 +35,7 @@
             </section>
         </div>
     </div>
+
+    <a href="Catalogo#<% =detalleArt.ID %>"  class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Seguir Explorando</a>
+              
 </asp:Content>
