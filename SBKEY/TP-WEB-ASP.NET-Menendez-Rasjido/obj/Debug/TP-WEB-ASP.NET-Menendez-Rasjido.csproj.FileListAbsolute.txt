@@ -226,3 +226,7 @@ C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido
 C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\TP-WEB-ASP.NET-Menendez-Rasjido\obj\Debug\TP-WEB-ASP.NET-Menendez-Rasjido.csproj.CopyComplete
 C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\TP-WEB-ASP.NET-Menendez-Rasjido\obj\Debug\TP-WEB-ASP.NET-Menendez-Rasjido.dll
 C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\TP-WEB-ASP.NET-Menendez-Rasjido\obj\Debug\TP-WEB-ASP.NET-Menendez-Rasjido.pdb
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\TP-WEB-ASP.NET-Menendez-Rasjido\bin\Bussines.dll
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\TP-WEB-ASP.NET-Menendez-Rasjido\bin\Dominio.dll
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\TP-WEB-ASP.NET-Menendez-Rasjido\bin\Bussines.pdb
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\TP-WEB-ASP.NET-Menendez-Rasjido\bin\Dominio.pdb
