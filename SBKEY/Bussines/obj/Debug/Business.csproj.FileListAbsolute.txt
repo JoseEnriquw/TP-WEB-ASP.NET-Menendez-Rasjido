@@ -25,3 +25,12 @@ C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido
 C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Bussines\obj\Debug\Business.csproj.CopyComplete
 C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Bussines\obj\Debug\Bussines.dll
 C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Bussines\obj\Debug\Bussines.pdb
+C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Bussines\bin\Debug\Bussines.dll
+C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Bussines\bin\Debug\Bussines.pdb
+C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Bussines\bin\Debug\Dominio.dll
+C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Bussines\bin\Debug\Dominio.pdb
+C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Bussines\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Bussines\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Bussines\obj\Debug\Business.csproj.CopyComplete
+C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Bussines\obj\Debug\Bussines.dll
+C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Bussines\obj\Debug\Bussines.pdb

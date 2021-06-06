@@ -16,11 +16,9 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
 
             int id = int.Parse(Request.QueryString["id"]);
                       
-                List<Articulo> listado = (List<Articulo>)Session["ListadoProducto"];
-                detalleArt =listado.Find(x => x.ID==id);
-                
+            List<Articulo> listado = (List<Articulo>)Session["ListadoProducto"];
+            detalleArt =listado.Find(x => x.ID==id);
 
-               
             }
 
        

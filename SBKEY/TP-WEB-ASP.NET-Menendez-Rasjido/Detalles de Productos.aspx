@@ -37,5 +37,6 @@
     </div>
 
     <a href="Catalogo#<% =detalleArt.ID %>"  class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Seguir Explorando</a>
+    <a href="Carrito de Compra.aspx?id=<% =detalleArt.ID %>&e=t" class="btn btn-primary pull-right">Ir al carrito! <span class="glyphicon glyphicon-chevron-right"></span></a>
               
 </asp:Content>

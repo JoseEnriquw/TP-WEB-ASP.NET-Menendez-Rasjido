@@ -20,8 +20,6 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
             try
             {
                 listaCatalogo = negocio.listar("");
-               
-               
 
                 Session.Add("ListadoProducto", listaCatalogo);
           

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Carrito de Compra.aspx.cs" Inherits="TP_WEB_ASP.NET_Menendez_Rasjido.Carrito_de_Compra" %>
+﻿<%@ Page EnableEventValidation="true" Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Carrito de Compra.aspx.cs" Inherits="TP_WEB_ASP.NET_Menendez_Rasjido.Carrito_de_Compra" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class="jumbotron">
@@ -38,40 +38,22 @@
 
                                 
 
+                             
+            <asp:Repeater runat="server" ID="repetidorCompra">
+            <ItemTemplate>
+                <tr>    
+                    <td><img src="<%#Eval("UrlImagen")%>" onerror="this.src='https://img.icons8.com/pastel-glyph/452/file-not-found--v2.png'" class="img-cart"></td>
+                    <td><strong><%#Eval("Nombre")%></strong><p><%#Eval("Marca")%></p></td>
+                    <td>
+                         <input class="form-control" type="text" value="1">
+                         <a href="Detalles de Productos.aspx?id=<%#Eval("ID")%>" class="cart-item-list"><img class="cart-item-list" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>
+                         <a href="carrito de compras" class="cart-item-list"><img class="cart-item-list" src="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png" alt="..." /> </a>
+                    </td>
+                    <td><%#Eval("Precio")%></td>
 
-
-
-                                <tr>
-                                    <td><img src="https://via.placeholder.com/400x200/FFB6C1/000000" class="img-cart"></td>
-                                    <td><strong>Product 1</strong><p>Size : 26</p></td>
-                                    <td>
- 
-                                        <input class="form-control" type="text" value="1">
-                                        <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>
-                                        <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png" alt="..." /> </a>
-  
-                                    </td>
-                                    <td>$54.00</td>
-                                    <td>$54.00</td>
-                                </tr>
-
-
-
-
-
-                                <tr>
-                                    <td><img src="https://via.placeholder.com/400x200/87CEFA/000000" class="img-cart"></td>
-                                    <td><strong>Product 2</strong><p>Size : M</p></td>
-                                    <td>
-
-                                        <input class="form-control" type="text" value="1">
-                                        <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>
-                                        <a href="Detalles de Productos" class="cart-item-list"><img class="cart-item-list" src="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png" alt="..." /> </a>
-
-                                    </td>
-                                    <td>$16.00</td>
-                                    <td>$32.00</td>
-                                </tr>
+                </tr>
+            </ItemTemplate>
+        </asp:Repeater>
 
 
 
@@ -96,8 +78,8 @@
                     </div>
                 </div>
                 </div>
-                <a href="#" class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Continue Shopping</a>
-                <a href="#" class="btn btn-primary pull-right">Next<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a href="Catalogo#<%#Eval("ID")%>"  class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Seguir Explorando</a>
+                <a href="#" class="btn btn-primary pull-right">Comprar!<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
     </div>

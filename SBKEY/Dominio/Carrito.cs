@@ -17,8 +17,7 @@ namespace Dominio
     {
         public Articulo _articulo { get; set; }
         public int cantidad { get; set; }
-
-        public double precioSubTotal { get; set; }
+        public decimal precioSubTotal { get; set; }
     }
 
 }
