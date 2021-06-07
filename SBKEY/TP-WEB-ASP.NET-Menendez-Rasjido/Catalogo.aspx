@@ -27,7 +27,7 @@
                 <h6 class="card-text">$<% =item.precio %></h6>
                 <a href="Detalles de Productos.aspx?id=<% =item.ID %>"  class="cart-btn-primary"><img class="cart-img-secundary" src="https://img.icons8.com/pastel-glyph/2x/info.png" alt="..." /> </a>
                 <a href="Carrito de Compra.aspx?id=<% = item.ID %>&e=t" class="cart-btn-primary"><img class="cart-img-primary" src="https://img.icons8.com/material-sharp/452/add-shopping-cart.png" alt="..." /> </a> 
-           
+                    
             </div>
         </div>
     </div>

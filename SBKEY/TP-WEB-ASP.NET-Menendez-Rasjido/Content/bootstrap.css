@@ -6951,13 +6951,15 @@ table tr td {
 table tr th {
     background: #34e483;
 }
-.cart-item-list{
+.cart-item-list {
     width: 15px;
+    height: 15px;
+    object-fit: cover;
 }
 
 
 /*pestaña inicial*/
-.navbar-brand a{
+.navbar-brand a {
     color: #34e483;
 }
 .jumbotron {

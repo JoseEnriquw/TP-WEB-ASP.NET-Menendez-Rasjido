@@ -15,6 +15,7 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
         public List<Articulo> carritoLista;
         protected void Page_Load(object sender, EventArgs e)
         {
+            decimal cont = 0;
             carritoLista = (List<Articulo>)Session["listaCompra"];
 
             if (carritoLista == null) { carritoLista = new List<Articulo>();}
@@ -39,29 +40,27 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
 
             Session.Add("listaCompra", carritoLista);
 
+
+
         }
-        /*
+        
         protected void Unnamed_Click(object sender, EventArgs e)
         {
         }
 
-        protected void btnEliminar_Click(object sender, EventArgs e)
-        {
-            var argument = ((Button)sender).CommandArgument;
-        }
 
-        protected void btnEliminar2_Click(object sender, EventArgs e)
+        protected void btnEliminar3_Click(object sender, EventArgs e)
         {
-            var argument = ((Button)sender).CommandArgument;
-            List<Articulo> favoritos = (List<Articulo>)Session["listaCompra"];
-            Articulo elim = favoritos.Find(x => x.ID.ToString() == argument);
-            favoritos.Remove(elim);
-            Session.Add("listaCompra", favoritos);
-            repetidor.DataSource = null;
-            repetidor.DataSource = favoritos;
-            repetidor.DataBind();
+            var argument = ((ImageButton)sender).CommandArgument;
+            List<Articulo> carritoLista = (List<Articulo>)Session["listaCompra"];
+            Articulo elim = carritoLista.Find(x => x.ID.ToString() == argument);
+            carritoLista.Remove(elim);
+            Session.Add("listaCompra", carritoLista);
+            repetidorCompra.DataSource = null;
+            repetidorCompra.DataSource = carritoLista;
+            repetidorCompra.DataBind();
         }
-
+        
         protected void txtCantidad_TextChanged(object sender, EventArgs e)
         {
             lblEjemplo.Text = "El valor es: " + ((TextBox)sender).Text;
@@ -69,8 +68,9 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
 
         protected void ddlCantidad_SelectedIndexChanged(object sender, EventArgs e)
         {
+            /*
             var argument = ((DropDownList)sender);
-            lblDesplegable.Text = "El DDL tiene " + ((DropDownList)sender).Text + " y el ID del POKE es: " + argument;
-        }*/
+            lblDesplegable.Text = "El DDL tiene " + ((DropDownList)sender).Text + " y el ID del POKE es: " + argument;*/
+        }
     }
 }

@@ -37,41 +37,42 @@
                             <tbody>
 
                                 
-
-                             
+            
+      
             <asp:Repeater runat="server" ID="repetidorCompra">
             <ItemTemplate>
                 <tr>    
                     <td><img src="<%#Eval("UrlImagen")%>" onerror="this.src='https://img.icons8.com/pastel-glyph/452/file-not-found--v2.png'" class="img-cart"></td>
                     <td><strong><%#Eval("Nombre")%></strong><p><%#Eval("Marca")%></p></td>
                     <td>
-                         <input class="form-control" type="text" value="1">
-                         <a href="Detalles de Productos.aspx?id=<%#Eval("ID")%>" class="cart-item-list"><img class="cart-item-list" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>
-                         <a href="carrito de compras" class="cart-item-list"><img class="cart-item-list" src="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png" alt="..." /> </a>
+                        <a href="Detalles de Productos.aspx?id=<%#Eval("ID")%>"><img class="cart-item-list" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>
+                        <asp:TextBox TextMode="Number" ID="txtCantidad" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged" />
+                        <asp:ImageButton CssClass="cart-item-list" ID="ImageButton1" ImageUrl="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png"  AlternateText="No Image available" OnClick="btnEliminar3_Click" CommandArgument='<%#Eval("ID")%>' runat="server" />
                     </td>
-                    <td><%#Eval("Precio")%></td>
-
+                    <td><%#Eval("precio")%></td>
+                    <td>
+                        SubTotal
+                    </td>         
                 </tr>
             </ItemTemplate>
         </asp:Repeater>
 
-
-
-
+                                
+                                
                                 <tr>
-                                    <td colspan="6">&nbsp;</td>
+                                    <td colspan="5">&nbsp;</td>
                                 </tr>
                                 <tr>
                                     <td colspan="4" class="text-right">PRECIO TOTAL DE PRODUCTOS</td>
-                                    <td>$86.00</td>
+                                    <td><asp:Label Text="text" ID="lblEjemplo" runat="server" /></td>
                                 </tr>
                                 <tr>
                                     <td colspan="4" class="text-right">ADICIONAL</td>
-                                    <td>$2.00</td>
+                                    <td>$99.99</td>
                                 </tr>
                                 <tr>
                                     <td colspan="4" class="text-right"><strong>TOTAL</strong></td>
-                                    <td>$88.00</td>
+                                    <td>$99.99</td>
                                 </tr>
                             </tbody>
                         </table>
