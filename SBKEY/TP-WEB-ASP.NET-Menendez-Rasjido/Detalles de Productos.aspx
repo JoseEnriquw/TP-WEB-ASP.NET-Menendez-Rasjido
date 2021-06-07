@@ -12,7 +12,7 @@
                 <div class="panel-body">
                     <div class="col-md-6">
                         <div class="pro-img-details">
-                            <img class="principal-img" src="<% =detalleArt.URLimagen %>" onerror="this.src='https://img.icons8.com/pastel-glyph/452/file-not-found--v2.png'" alt="">
+                            <img class="principal-img" src="<% =detalleArt.URLimagen %>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">

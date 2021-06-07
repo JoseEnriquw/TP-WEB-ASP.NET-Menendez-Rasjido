@@ -42,7 +42,7 @@
             <asp:Repeater runat="server" ID="repetidorCompra">
             <ItemTemplate>
                 <tr>    
-                    <td><img src="<%#Eval("UrlImagen")%>" onerror="this.src='https://img.icons8.com/pastel-glyph/452/file-not-found--v2.png'" class="img-cart"></td>
+                    <td><img src="<%#Eval("UrlImagen")%>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" class="img-cart"></td>
                     <td><strong><%#Eval("Nombre")%></strong><p><%#Eval("Marca")%></p></td>
                     <td>
                         <a href="Detalles de Productos.aspx?id=<%#Eval("ID")%>"><img class="cart-item-list" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>

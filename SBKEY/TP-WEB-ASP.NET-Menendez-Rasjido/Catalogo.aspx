@@ -17,7 +17,7 @@
     <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card">
             <section id="<% =item.ID %>">
-            <img src="<% =item.URLimagen %>" onerror="this.src='https://img.icons8.com/pastel-glyph/452/file-not-found--v2.png'" class="card-img-top" alt="..." />
+            <img src="<% =item.URLimagen %>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" class="card-img-top" alt="..." />
              </section>
             <div class="card-body">
                 

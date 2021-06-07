@@ -50,13 +50,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Nombre de la aplicación</a>
+                    <a class="navbar-brand" runat="server" href="~/">SBKEY.WEB</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/Catalogo">Catalogo de productos</a></li>
-                        <li><a runat="server" href="~/Carrito de Compra">Carrito de compras</a></li>
+                        <li><a runat="server" href="~/">INICIO</a></li>
+                        <li><a runat="server" href="~/Catalogo">CATALOGO DE PRODUCTOS</a></li>
+                        <li><a runat="server" href="~/Carrito de Compra">TU CARRITO DE COMPRAS</a></li>
                     </ul>
                 </div>
             </div>
