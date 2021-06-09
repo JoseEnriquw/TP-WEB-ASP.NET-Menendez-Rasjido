@@ -26,11 +26,10 @@
 
             <h3 class="list-h3">PRECIOS</h3>
             <ul class="list-group">
-                <asp:Label CssClass="lblfilter" Text="DESDE:" runat="server" /> 
+                <asp:Label CssClass="lblfilter" Text="Desde:" runat="server" /> 
                 <asp:TextBox CssClass="filter" ID="TextBox1" runat="server" Text="" OnTextChanged="filterprecio"></asp:TextBox>
-                <asp:Label CssClass="lblfilter" Text="HASTA:" runat="server" />
+                <asp:Label CssClass="lblfilter" Text="Hasta:" runat="server" />
                 <asp:TextBox CssClass="filter" ID="TextBox2" runat="server" Text="" OnTextChanged="filterprecio"></asp:TextBox>
-                <asp:TextBox CssClass="filter" ID="TextBox3" runat="server" Text=""></asp:TextBox>
             </ul>
                 <h3 class="list-h3">CATEGORIAS</h3>
             <ul class="list-group">

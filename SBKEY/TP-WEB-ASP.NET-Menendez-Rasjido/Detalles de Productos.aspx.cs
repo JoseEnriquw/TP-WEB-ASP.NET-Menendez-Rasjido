@@ -13,16 +13,17 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
         public Articulo detalleArt;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.QueryString["id"] != null)
+            {
+                int id = int.Parse(Request.QueryString["id"]);
 
-            int id = int.Parse(Request.QueryString["id"]);
-                      
-            List<Articulo> listado = (List<Articulo>)Session["ListadoProducto"];
-            detalleArt =listado.Find(x => x.ID==id);
-
+                List<Articulo> listado = (List<Articulo>)Session["ListadoProducto"];
+                detalleArt = listado.Find(x => x.ID == id);
             }
-
-       
-
-
+            else
+            {
+                Response.Redirect("Default.aspx");
+            }
+            }
     }
 }

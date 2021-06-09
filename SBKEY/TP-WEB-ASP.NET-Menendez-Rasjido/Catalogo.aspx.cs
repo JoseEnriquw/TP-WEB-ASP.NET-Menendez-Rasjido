@@ -19,7 +19,7 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
         {
             ArticulosBussines negocio = new ArticulosBussines();
 
-
+           
 
             try
             {
@@ -209,22 +209,18 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
             if (TextBox1.Text.Length != 0 && TextBox2.Text.Length != 0)
             {
                 listaCatalogo = negocio.listar("where a.precio between " + TextBox1.Text + " and " + TextBox2.Text);
-                TextBox3.Text = "LOS DOS";
             }
             else if (TextBox1.Text.Length != 0)
             {
                 listaCatalogo = negocio.listar("where a.precio <= " + TextBox1.Text);
-                TextBox3.Text = "MENOR A";
             }
             else if (TextBox2.Text.Length != 0)
             {
                 listaCatalogo = negocio.listar("where a.precio >= " + decimal.Parse(TextBox2.Text));
-                TextBox3.Text = "MAYOR A";
             }
             else
             {
-                TextBox3.Text = "NADAAAA";
-                return;
+                filterDefault(sender, e);
             }
             Session.Add("ListadoProducto", listaCatalogo);
         }

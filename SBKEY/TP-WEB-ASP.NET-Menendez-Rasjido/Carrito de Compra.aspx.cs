@@ -14,75 +14,132 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
     {
         public List<Articulo> carritoLista;
         public List<ItemCarrito> itemsCarrito;
+        public List<ItemCarrito> itemAux;
+        public List<Carrito> compra;
         protected void Page_Load(object sender, EventArgs e)
         {
-            decimal cont = 0;
             carritoLista = (List<Articulo>)Session["listaCompra"];
-
-            if (carritoLista == null) { carritoLista = new List<Articulo>();}
-
+            itemsCarrito = (List<ItemCarrito>)Session["ListaItems"];
+            if (carritoLista == null) carritoLista = new List<Articulo>();
+            if (itemsCarrito == null) itemsCarrito = new List<ItemCarrito>();
 
             if (!IsPostBack)
             {
                 if (Request.QueryString["id"] != null)
                 {
-                    
                     if (carritoLista.Find(x => x.ID.ToString() == Request.QueryString["id"]) == null)
                     {
-
                         List<Articulo> listadoOriginal = (List<Articulo>)Session["listadoProducto"];
-                        carritoLista.Add(listadoOriginal.Find(x => x.ID.ToString() == Request.QueryString["id"]));
+                        int aux = int.Parse(Request.QueryString["id"]);
+                        carritoLista.Add(listadoOriginal.Find(x => x.ID == aux));
 
+                        itemsCarrito.Add(new ItemCarrito() { articulo = listadoOriginal.Find(x => x.ID == aux),
+                        cantidad = 1, precioSubTotal = listadoOriginal.Find(x => x.ID.ToString() == Request.QueryString["id"]).precio });
+                    }
+                    else
+                    {
+                        itemAux = new List<ItemCarrito>();
+                        itemAux.Clear();
+
+                        List<ItemCarrito> listadoOr = (List<ItemCarrito>)Session["ListaItems"];
+                        int aux = int.Parse(Request.QueryString["id"]);
+                        itemAux.Add(listadoOr.Find(x => x.articulo.ID == aux));
+
+                        int cant = itemAux[0].cantidad + 1;
+                        decimal subt = itemAux[0].articulo.precio;
+                        subt = cant * subt;
+                        var replaceItem = new ItemCarrito { articulo = itemAux[0].articulo, cantidad = cant, precioSubTotal = subt };
+
+                        var element = itemsCarrito.FirstOrDefault(i => i.articulo.ID == replaceItem.articulo.ID);
+
+                        itemsCarrito.Remove(element);
+                        itemsCarrito.Add(replaceItem);
                     }
                 }
-
                 //Repeater
-                repetidorCompra.DataSource = carritoLista;
+                repetidorCompra.DataSource = itemsCarrito;
                 repetidorCompra.DataBind();
             }
-
             Session.Add("listaCompra", carritoLista);
+            Session.Add("listaItems", itemsCarrito);
 
+            compra = (List<Carrito>)Session["precompra"];
+            compra = new List<Carrito>();
+            compra.Clear();
 
+            decimal prodt = 0;
 
-        }
-        
-      private int validarAcumular(List<ItemCarrito> aux, int ID)
-        {
-            int pos=0;
-
-            foreach (ItemCarrito item in aux)
+            foreach (ItemCarrito item in itemsCarrito)
             {
-                if (item._articulo.ID == ID) return pos;
-                pos++;
+                prodt = prodt + (item.precioSubTotal);
             }
-            pos = 0;
-            return pos;
+
+            compra.Add(new Carrito() { totalproductos = prodt, adicional = 800, total = prodt + 800 });
+            Session.Add("precompra", compra);
+
+            repetidorData.DataSource = compra;
+            repetidorData.DataBind();
+
+            int cont= 0;
+            foreach(ItemCarrito item in itemsCarrito)
+            {
+                ((TextBox)repetidorCompra.Items[cont].FindControl("txtCantidad")).Text = item.cantidad.ToString();
+                cont++;
+            }
         }
 
 
         protected void btnEliminar3_Click(object sender, EventArgs e)
         {
             var argument = ((ImageButton)sender).CommandArgument;
-            List<Articulo> carritoLista = (List<Articulo>)Session["listaCompra"];
-            Articulo elim = carritoLista.Find(x => x.ID.ToString() == argument);
-            carritoLista.Remove(elim);
-            Session.Add("listaCompra", carritoLista);
+            List<ItemCarrito> it= (List<ItemCarrito>)Session["listaItems"];
+            int aux = int.Parse(argument);
+            var elem = itemsCarrito.FirstOrDefault(i => i.articulo.ID == aux);
+
+            itemsCarrito.Remove(elem);
+            Session.Add("listaItems", itemsCarrito);
             repetidorCompra.DataSource = null;
-            repetidorCompra.DataSource = carritoLista;
+            repetidorCompra.DataSource = itemsCarrito;
             repetidorCompra.DataBind();
-        }
-        
-        protected void txtCantidad_TextChanged(object sender, EventArgs e)
-        {
-            lblEjemplo.Text = "El valor es: " + ((TextBox)sender).Text;
+            Page_Load(sender,e);
         }
 
-        protected void ddlCantidad_SelectedIndexChanged(object sender, EventArgs e)
+        protected void txtCantidad_TextChanged(object sender, EventArgs e)
         {
             /*
-            var argument = ((DropDownList)sender);
-            lblDesplegable.Text = "El DDL tiene " + ((DropDownList)sender).Text + " y el ID del POKE es: " + argument;*/
+            int cantAux = int.Parse(((TextBox)sender).Text);
+            int aux = IDSELECCIONADO ??????????; ///NECESITO OBTENER EL DATO DE QUE "ARTICULO.ID" ESTOY SELECCIONANDO
+
+            if (cantAux >= 1) { 
+
+            itemAux = new List<ItemCarrito>();
+            itemAux.Clear();
+
+            List<ItemCarrito> listadoOr = (List<ItemCarrito>)Session["ListaItems"];
+            itemAux.Add(listadoOr.Find(x => x.articulo.ID == aux));
+
+            cantAux = itemAux[0].cantidad + 1;
+            decimal subt = itemAux[0].articulo.precio;
+            subt = cantAux * subt;
+            var replaceItem = new ItemCarrito { articulo = itemAux[0].articulo, cantidad = cantAux, precioSubTotal = subt };
+
+            var element = itemsCarrito.FirstOrDefault(i => i.articulo.ID == replaceItem.articulo.ID);
+              
+            itemsCarrito.Remove(element);
+            itemsCarrito.Add(replaceItem);
+            }
+            else
+            {
+                var elem = itemsCarrito.FirstOrDefault(i => i.articulo.ID == aux);
+
+                itemsCarrito.Remove(elem);
+                Session.Add("listaItems", itemsCarrito);
+                repetidorCompra.DataSource = null;
+                repetidorCompra.DataSource = itemsCarrito;
+                repetidorCompra.DataBind();
+            }*/
         }
+
+
     }
 }

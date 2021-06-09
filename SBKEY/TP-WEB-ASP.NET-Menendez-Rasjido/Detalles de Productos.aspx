@@ -15,7 +15,7 @@
                             <img class="principal-img" src="<% =detalleArt.URLimagen %>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 det">
                         <h4 class="pro-d-title"><% =detalleArt.Nombre %></h4>
                         <p><% =detalleArt.Descripcion %></p>
                         <div class="product_meta">
@@ -23,12 +23,8 @@
                             <span class="tagged_as"><strong>Marca:</strong> <a rel="tag" href="#"><% =detalleArt.Marca %></a></span>
                         </div>
                         <div class="m-bot15"> <strong>Precio: </strong> <span class="amount">$<% =detalleArt.precio %></span></div>
-                            <div class="form-group">
-                                <label>Cantidad</label>
-                                <input type="quantiy" placeholder="1" class="form-control quantity">
-                            </div>
                         <p>
-                        <button class="btn btn-round btn-danger" type="button"><i class="fa fa-shopping-cart"></i>Añadir al carro</button>
+                        <a href="Carrito de Compra.aspx?id=<%=detalleArt.ID %>&e=t" class="adddesc">AÑADIR PRODUCTO<span class="glyphicon glyphicon-chevron-right"></span></a>
                         </p>
                     </div>
                 </div>
@@ -36,7 +32,7 @@
         </div>
     </div>
 
-    <a href="Catalogo#<% =detalleArt.ID %>"  class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Seguir Explorando</a>
-    <a href="Carrito de Compra.aspx?id=<% =detalleArt.ID %>&e=t" class="btn btn-primary pull-right">Ir al carrito! <span class="glyphicon glyphicon-chevron-right"></span></a>
+    <a href="Catalogo#<% =detalleArt.ID%>"  class="btn btn-success"><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;Seguir Explorando</a>
+    <a href="Carrito de Compra.aspx?id=<%=detalleArt.ID %>&e=t" class="btn btn-primary pull-right">Ir al carrito! <span class="glyphicon glyphicon-chevron-right"></span></a>
               
 </asp:Content>

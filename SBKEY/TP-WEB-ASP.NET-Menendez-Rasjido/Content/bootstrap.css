@@ -8244,8 +8244,8 @@ button.close {
 .card-img-top {
     margin: 9px;
     background: #fff;
-    height: 200px;
-    width: 215px;
+    height: 90%;
+    width: 90%;
     border: 5px solid #000;
     border-radius: 10px;
     object-fit: scale-down;
@@ -8287,7 +8287,7 @@ button.close {
 
 aside {
     width: 11%;
-    height: 80%;
+    height: 95%;
     background: #000;
     border-radius: 10px;
     /* Esto lo mantendra en su sitio */
@@ -8482,6 +8482,10 @@ table {
     padding: 40px;
 }
 
+.det {
+    padding-top: 4%;
+}
+
 .single_event {
     margin-bottom: 30px;
 }
@@ -8539,7 +8543,7 @@ html {
     scroll-behavior: smooth;
     user-select: none;
     margin: 16%;
-    margin-top: 2%;
+    margin-top: 0.1%;
 }
 
 body {
@@ -8557,3 +8561,38 @@ body {
     overflow: scroll;
     overflow-x: hidden;
 }
+.adddesc {
+    margin-top: 7%;
+    text-align: center;
+    color: #000;
+    padding: 1%;
+    display: block;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 38%;
+    height: 200%;
+    background: #34e483;
+}
+.catdesc {
+    margin-top: 10%;
+    text-align: center;
+    color: #000;
+    padding: 1%;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 38%;
+    height: 200%;
+    background: #34e483;
+}
+
+    .catdesc:hover {
+        color: #fff;
+        border: 3px solid #000;
+        background: #008d18;
+    }
+    .adddesc:hover {
+        color: #fff;
+        border: 3px solid #000;
+        background: #008d18;
+    }
+

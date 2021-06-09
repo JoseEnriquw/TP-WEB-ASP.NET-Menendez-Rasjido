@@ -8,14 +8,15 @@ namespace Dominio
 {
     public class Carrito
     { 
-            public List<ItemCarrito> Items { get; set; }
-       
+        public decimal totalproductos { get; set; }
+        public decimal adicional { get; set; }
+        public decimal total { get; set; }
     }
 
 
     public class ItemCarrito
     {
-        public Articulo _articulo { get; set; }
+        public Articulo articulo { get; set; }
         public int cantidad { get; set; }
         public decimal precioSubTotal { get; set; }
     }

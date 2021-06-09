@@ -47,7 +47,7 @@
 
             <div class="col-lg-12">
                 <div class="text-center pt-lg-5 pt-3">
-                    <a href="Catalogo" class="event-link"> VER TODOS LOS PRODUCTOS <img src="img/next.png" alt="" /> </a>
+                    <a href="Catalogo" class="catdesc">VER TODOS LOS PRODUCTOS<span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
             </div>
         </div>

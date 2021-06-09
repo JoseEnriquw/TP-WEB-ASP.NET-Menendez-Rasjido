@@ -42,31 +42,54 @@
             <asp:Repeater runat="server" ID="repetidorCompra">
             <ItemTemplate>
                 <tr>    
-                    <td><img src="<%#Eval("UrlImagen")%>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" class="img-cart"></td>                    <td><strong><%#Eval("Nombre")%></strong><p><%#Eval("Marca")%></p></td>                    <td class="cart-item-list">                        <a  href="Detalles de Productos.aspx?id=<%#Eval("ID")%>"><img class="cart-item-list2"src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>                        <asp:TextBox TextMode="Number" ID="txtCantidad1" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged" />                        <asp:ImageButton CssClass="cart-item-list2" ID="ImageButton1" ImageUrl="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png"  AlternateText="No Image available" OnClick="btnEliminar3_Click" CommandArgument='<%#Eval("ID")%>' runat="server" />                    </td>
+                    <td><img src="<%#Eval("articulo.UrlImagen")%>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" class="img-cart"></td>
+                    <td><strong><%#Eval("articulo.Nombre")%></strong><p><%#Eval("articulo.Marca")%></p></td>
+                    <td class="cart-item-list">
+                        <a  href="Detalles de Productos.aspx?id=<%#Eval("articulo.ID")%>">
+                            <img class="cart-item-list2" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /></a>
 
-                    <td class="cart-item-list"><%#Eval("precio")%></td>                    <td class="cart-item-list">                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>                    </td>
+                        <asp:TextBox TextMode="Number" name="ValNum" ID="txtCantidad" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged" />
+                         <script>
+                            $(document).ready(function () {
+                             $("#ValNum").keypress(function (e) {
+                                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {$("#errmsg").html("Digits Only").show().fadeOut("slow"); return false;
+                                }
+                             });
+                            });
+                         </script>
+
+                        
+                        <asp:ImageButton CssClass="cart-item-list2" ID="ImageButton1" ImageUrl="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png"  
+                            AlternateText="No Image available" OnClick="btnEliminar3_Click" CommandArgument='<%#Eval("articulo.ID")%>' runat="server" />
+                    </td>
+
+                    <td class="cart-item-list"><%#Eval("articulo.precio")%></td>
+                    <td class="cart-item-list"><%#Eval("precioSubTotal")%></td>
 
                 </tr>
             </ItemTemplate>
         </asp:Repeater>
-
                                 
                                 
+        <asp:Repeater runat="server" ID="repetidorData">
+        <ItemTemplate>
                                 <tr>
                                     <td colspan="5">&nbsp;</td>
                                 </tr>
                                 <tr>
                                     <td colspan="4" class="text-right">PRECIO TOTAL DE PRODUCTOS</td>
-                                    <td><asp:Label Text="text" ID="lblEjemplo" runat="server" /></td>
+                                    <td><strong><%#Eval("totalproductos")%></strong></td>
                                 </tr>
                                 <tr>
                                     <td colspan="4" class="text-right">ADICIONAL</td>
-                                    <td>$99.99</td>
+                                    <td><strong><%#Eval("adicional")%></strong></td>
                                 </tr>
                                 <tr>
                                     <td colspan="4" class="text-right"><strong>TOTAL</strong></td>
-                                    <td>$99.99</td>
+                                    <td><strong><%#Eval("total")%></strong></td>
                                 </tr>
+        </ItemTemplate>
+        </asp:Repeater>  
                             </tbody>
                         </table>
                     </div>
