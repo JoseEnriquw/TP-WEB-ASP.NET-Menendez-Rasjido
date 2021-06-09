@@ -9,15 +9,15 @@ C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dom
 C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dominio\obj\Debug\Dominio.dll
 C:\Users\Adriel Rasjido\Documents\GitHub\Actividad-2-PrograIII\SystemSimplex\Dominio\obj\Debug\Dominio.pdb
-C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\bin\Debug\Dominio.dll
-C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\bin\Debug\Dominio.pdb
-C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
-C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
-C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\obj\Debug\Dominio.dll
-C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\obj\Debug\Dominio.pdb
 C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Dominio\bin\Debug\Dominio.dll
 C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Dominio\bin\Debug\Dominio.pdb
 C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
 C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Dominio\obj\Debug\Dominio.dll
 C:\Users\Adriel Rasjido\Desktop\UTN WEB\TP3\SBKEY\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\bin\Debug\Dominio.dll
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\obj\Debug\Dominio.dll
+C:\Users\Jose\source\repos\Actividad-4-PrograIII\TP-WEB-ASP.NET-Menendez-Rasjido\SBKEY\Dominio\obj\Debug\Dominio.pdb

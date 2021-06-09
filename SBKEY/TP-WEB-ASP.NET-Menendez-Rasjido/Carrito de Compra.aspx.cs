@@ -13,6 +13,7 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
     public partial class Carrito_de_Compra : System.Web.UI.Page
     {
         public List<Articulo> carritoLista;
+        public List<ItemCarrito> itemsCarrito;
         protected void Page_Load(object sender, EventArgs e)
         {
             decimal cont = 0;
@@ -28,8 +29,10 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
                     
                     if (carritoLista.Find(x => x.ID.ToString() == Request.QueryString["id"]) == null)
                     {
+
                         List<Articulo> listadoOriginal = (List<Articulo>)Session["listadoProducto"];
                         carritoLista.Add(listadoOriginal.Find(x => x.ID.ToString() == Request.QueryString["id"]));
+
                     }
                 }
 
@@ -44,8 +47,17 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
 
         }
         
-        protected void Unnamed_Click(object sender, EventArgs e)
+      private int validarAcumular(List<ItemCarrito> aux, int ID)
         {
+            int pos=0;
+
+            foreach (ItemCarrito item in aux)
+            {
+                if (item._articulo.ID == ID) return pos;
+                pos++;
+            }
+            pos = 0;
+            return pos;
         }
 
 

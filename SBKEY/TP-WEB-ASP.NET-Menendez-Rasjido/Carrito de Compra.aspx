@@ -7,7 +7,7 @@
     </div>
 
 
-    <div class="container bootstrap snippets bootdey">
+    <div class="container-extra">
         <div class="col-md-9 col-sm-8 content">
             <div class="row">
                 <div class="col-md-12">
@@ -42,17 +42,10 @@
             <asp:Repeater runat="server" ID="repetidorCompra">
             <ItemTemplate>
                 <tr>    
-                    <td><img src="<%#Eval("UrlImagen")%>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" class="img-cart"></td>
-                    <td><strong><%#Eval("Nombre")%></strong><p><%#Eval("Marca")%></p></td>
-                    <td>
-                        <a href="Detalles de Productos.aspx?id=<%#Eval("ID")%>"><img class="cart-item-list" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>
-                        <asp:TextBox TextMode="Number" ID="txtCantidad" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged" />
-                        <asp:ImageButton CssClass="cart-item-list" ID="ImageButton1" ImageUrl="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png"  AlternateText="No Image available" OnClick="btnEliminar3_Click" CommandArgument='<%#Eval("ID")%>' runat="server" />
-                    </td>
-                    <td><%#Eval("precio")%></td>
-                    <td>
-                        SubTotal
-                    </td>         
+                    <td><img src="<%#Eval("UrlImagen")%>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" class="img-cart"></td>                    <td><strong><%#Eval("Nombre")%></strong><p><%#Eval("Marca")%></p></td>                    <td class="cart-item-list">                        <a  href="Detalles de Productos.aspx?id=<%#Eval("ID")%>"><img class="cart-item-list2"src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /> </a>                        <asp:TextBox TextMode="Number" ID="txtCantidad1" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged" />                        <asp:ImageButton CssClass="cart-item-list2" ID="ImageButton1" ImageUrl="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png"  AlternateText="No Image available" OnClick="btnEliminar3_Click" CommandArgument='<%#Eval("ID")%>' runat="server" />                    </td>
+
+                    <td class="cart-item-list"><%#Eval("precio")%></td>                    <td class="cart-item-list">                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>                    </td>
+
                 </tr>
             </ItemTemplate>
         </asp:Repeater>

@@ -5,7 +5,7 @@
         <p class="lead">Agrega, modifica y elige tus productos favoritos.</p>
     </div>
 
-    <div class="container bootdey">
+    <div class="container-extra">
 
         <div class="col-md-12">
             <section class="panel">

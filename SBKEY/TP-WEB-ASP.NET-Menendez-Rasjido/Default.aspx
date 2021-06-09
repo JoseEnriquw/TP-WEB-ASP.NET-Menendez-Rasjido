@@ -8,7 +8,7 @@
     </div>
 
     <div class="events_area">
-    <div class="container">
+    <div class="container-extra">
         <div class="row justify-content-center">
             <div class="col-lg-5">
                 <div class="main_title">

@@ -6,14 +6,53 @@
         <p class="lead">Hechale un vistazo a nuestros productos!</p>
     </div>
 
-    <div class="container">
+    <aside>
+    <div class="row-panel-find">
+        <div class="col-sm-3-list">
+            
+            <!--left col-->
+
+           <img class="img-find" src="https://i.postimg.cc/V6mxf8V0/LOGOSS.png" alt="..." />
+
+           <h3 class="list-h3">FILTROS</h3>
+
+            <ul class="list-group">
+                <asp:Button CssClass="Btton" ID="Button0" runat="server" Text="Por defecto" Onclick="filterDefault"/>
+                <asp:Button CssClass="Btton" ID="Button1" runat="server" Text="De menor a mayor precio" Onclick="filterMinPrecio"/>
+                <asp:Button CssClass="Btton" ID="Button2" runat="server" Text="De mayor a menor precio" Onclick="filterMaxPrecio"/>
+                <asp:Button CssClass="Btton" ID="Button3" runat="server" Text="Lo mas reciente primero" Onclick="filterRecientes"/>
+                <asp:Button CssClass="Btton" ID="Button4" runat="server" Text="Lo mas antiguo primero" Onclick="filterAntiguos"/>
+            </ul>
+
+            <h3 class="list-h3">PRECIOS</h3>
+            <ul class="list-group">
+                <asp:Label CssClass="lblfilter" Text="DESDE:" runat="server" /> 
+                <asp:TextBox CssClass="filter" ID="TextBox1" runat="server" Text="" OnTextChanged="filterprecio"></asp:TextBox>
+                <asp:Label CssClass="lblfilter" Text="HASTA:" runat="server" />
+                <asp:TextBox CssClass="filter" ID="TextBox2" runat="server" Text="" OnTextChanged="filterprecio"></asp:TextBox>
+                <asp:TextBox CssClass="filter" ID="TextBox3" runat="server" Text=""></asp:TextBox>
+            </ul>
+                <h3 class="list-h3">CATEGORIAS</h3>
+            <ul class="list-group">
+                <asp:DropDownList CssClass="dropitem" ID="DropDownList2" runat="server" OnSelectedIndexChanged="filterCat" AutoPostBack="true"></asp:DropDownList>
+            </ul>
+                <h3 class="list-h3">MARCAS</h3>
+            <ul class="list-group">
+                <asp:DropDownList CssClass="dropitem" ID="DropDownList3" runat="server" OnSelectedIndexChanged="filterMar" AutoPostBack="true"
+></asp:DropDownList>
+            </ul>
+        </div>
+    </div>
+    </aside>
+
+
+    <div class="container-extra">
     <div class="row clearfix">
         
         <%  
             foreach (Dominio.Articulo item in listaCatalogo)
             {
             %>
-        
     <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card">
             <section id="<% =item.ID %>">
@@ -38,3 +77,4 @@
 </div>
     
 </asp:Content>
+

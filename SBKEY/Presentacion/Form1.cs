@@ -257,31 +257,31 @@ namespace Presentacion
         private string condicionMod()
         {
             bool andc = false; int cont = 0; string queryCondicion = " where ";
-            if (textBoxIdMod.Text != "") { queryCondicion += "A.id = " + textBoxIdMod.Text; andc = true; cont++; }
+            if (textBoxIdMod.Text != "") { queryCondicion += " A.id = " + textBoxIdMod.Text; andc = true; cont++; }
 
             if (andc == true && textBoxCodMod.Text != "") { queryCondicion += " and "; andc = false; }
-            if (textBoxCodMod.Text != "") { queryCondicion += "A.codigo LIKE '%" + textBoxCodMod.Text + "%'"; andc = true; cont++; }
+            if (textBoxCodMod.Text != "") { queryCondicion += " A.codigo LIKE '%" + textBoxCodMod.Text + "%'"; andc = true; cont++; }
 
             if (andc == true && textBoxNombreMod.Text != "") { queryCondicion += " and "; andc = false; }
-            if (textBoxNombreMod.Text != "") { queryCondicion += "A.nombre LIKE '%" + textBoxNombreMod.Text + "%'"; andc = true; cont++; }
+            if (textBoxNombreMod.Text != "") { queryCondicion += " A.nombre LIKE '%" + textBoxNombreMod.Text + "%'"; andc = true; cont++; }
 
             if (andc == true && textBoxDescripMod.Text != "") { queryCondicion += " and "; andc = false; }
-            if (textBoxDescripMod.Text != "") { queryCondicion += "A.descripcion LIKE '%" + textBoxDescripMod.Text + "%'"; andc = true; cont++; }
+            if (textBoxDescripMod.Text != "") { queryCondicion += " A.descripcion LIKE '%" + textBoxDescripMod.Text + "%'"; andc = true; cont++; }
 
             if (andc == true && textBoxPrecioMod.Text != "" || andc == true && textBoxPrecioMinMod.Text != "" || andc == true && textBoxPrecioMaxMod.Text != "")
             { queryCondicion += " and "; andc = false; cont++; }
 
-            if (textBoxPrecioMod.Text != "") { queryCondicion += "A.precio = " + textBoxPrecioMod.Text; andc = true; cont++; }
+            if (textBoxPrecioMod.Text != "") { queryCondicion += " A.precio = " + textBoxPrecioMod.Text; andc = true; cont++; }
             else if (textBoxPrecioMinMod.Text != "" && textBoxPrecioMaxMod.Text != "" && decimal.Parse(textBoxPrecioMinMod.Text) < decimal.Parse(textBoxPrecioMaxMod.Text))
             { queryCondicion += " A.precio between " + decimal.Parse(textBoxPrecioMinMod.Text) + " and " + decimal.Parse(textBoxPrecioMaxMod.Text); andc = true; cont++; }
-            else if (textBoxPrecioMinMod.Text != "") { queryCondicion += "A.precio >= " + decimal.Parse(textBoxPrecioMinMod.Text); andc = true; cont++; }
-            else if (textBoxPrecioMaxMod.Text != "") { queryCondicion += "A.precio <= " + decimal.Parse(textBoxPrecioMaxMod.Text); andc = true; cont++; }
+            else if (textBoxPrecioMinMod.Text != "") { queryCondicion += " A.precio >= " + decimal.Parse(textBoxPrecioMinMod.Text); andc = true; cont++; }
+            else if (textBoxPrecioMaxMod.Text != "") { queryCondicion += " A.precio <= " + decimal.Parse(textBoxPrecioMaxMod.Text); andc = true; cont++; }
 
             if (andc == true && comboBoxMarcaMod.SelectedIndex >= 0) { queryCondicion += " and "; andc = false; }
             if (comboBoxMarcaMod.SelectedIndex >= 0)
             {
                 int cb = comboBoxMarcaMod.SelectedIndex + 1;
-                queryCondicion += "A.idMarca = " + cb.ToString();
+                queryCondicion += " A.idMarca = " + cb.ToString();
                 andc = true; cont++;
             }
 
@@ -289,7 +289,7 @@ namespace Presentacion
             if (comboBoxCategMod.SelectedIndex >= 0)
             {
                 int cb = comboBoxCategMod.SelectedIndex + 1;
-                queryCondicion += "A.idCategoria = " + cb.ToString();
+                queryCondicion += " A.idCategoria = " + cb.ToString();
                 cont++;
             }
             if (cont == 0) { queryCondicion = ""; }
@@ -372,10 +372,10 @@ namespace Presentacion
                     if (textBoxNombreMod.Text != "") { update += "  nombre = '" + textBoxNombreMod.Text + "'"; and = true; }
 
                     if (and == true && textBoxDescripMod.Text != "") {          update += ", "; and = false; }
-                    if (textBoxDescripMod.Text != "") { update += "descripcion ='" + textBoxDescripMod.Text + "'"; and = true; }
+                    if (textBoxDescripMod.Text != "") { update += " descripcion ='" + textBoxDescripMod.Text + "'"; and = true; }
 
                     if (and == true && textBoxPrecioMod.Text != "") {           update += ", "; and = false; }
-                    if (textBoxPrecioMod.Text != "") { update += "precio =" + textBoxPrecioMod.Text; and = true; }
+                    if (textBoxPrecioMod.Text != "") { update += " precio =" + textBoxPrecioMod.Text; and = true; }
 
                     if (and == true && comboBoxMarcaMod.SelectedIndex >= 0) {   update += ", "; and = false; }
                     if (comboBoxMarcaMod.SelectedIndex >= 0)

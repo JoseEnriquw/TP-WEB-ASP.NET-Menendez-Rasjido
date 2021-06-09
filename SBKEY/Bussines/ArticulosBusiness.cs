@@ -40,5 +40,31 @@ namespace Bussines
             catch (Exception ex){ throw ex;}
             finally{ accessdata.cerrarConexion();}
         }
+
+        public List<Categorias_y_Marcas> listar2(string consulta)
+        {
+            List<Categorias_y_Marcas> lista = new List<Categorias_y_Marcas>();
+            AccessData accessdata = new AccessData("(local)\\SQLEXPRESS", "CATALOGO_DB");
+            try
+            {
+               
+                accessdata.setearConsulta(consulta);
+                accessdata.ejecutarLectura();
+                while (accessdata.Lector.Read())
+                {
+                    Categorias_y_Marcas aux = new Categorias_y_Marcas();  
+                    
+                    aux.ID = (int)accessdata.Lector["ID"];
+                    aux.Nombre = (string)accessdata.Lector["Descripcion"];
+
+
+                    lista.Add(aux);
+                }
+                return lista;
+            }
+            catch (Exception ex) { throw ex; }
+            finally { accessdata.cerrarConexion(); }
+        }
+
     }
 }
