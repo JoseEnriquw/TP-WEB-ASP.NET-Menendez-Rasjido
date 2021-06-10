@@ -48,18 +48,19 @@
                         <a  href="Detalles de Productos.aspx?id=<%#Eval("articulo.ID")%>">
                             <img class="cart-item-list2" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /></a>
                        
-                        <asp:TextBox TextMode="Number" name="ValNum" ID="txtCantidad" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged"  MaxLength='<%#Eval("articulo.ID")%>'  />
-                    </td>/>
-                      
+                        <asp:TextBox TextMode="Number" name="ValNum" ID="txtCantidad" runat="server" AutoPostBack="true" MaxLength='<%#Eval("articulo.ID")%>' enabled="false"/>
+
+                        <asp:ImageButton CssClass="cart-item-list2" ID="ImageButton2" ImageUrl="https://www.wpclipart.com/signs_symbol/button/metal_buttons/arrow_button_metal_green_up.png"  
+                            AlternateText="No Image available" OnClick="cantidadsuma" CommandArgument='<%#Eval("articulo.ID")%>' runat="server" />
+
+                        <asp:ImageButton CssClass="cart-item-list2" ID="ImageButton3" ImageUrl="https://www.wpclipart.com/signs_symbol/button/metal_buttons/arrow_button_metal_green_down.png"  
+                            AlternateText="No Image available" OnClick="cantidadresta" CommandArgument='<%#Eval("articulo.ID")%>' runat="server" />
+
                         <script>
                             $(document).ready(function () {
                              $("#ValNum").keypress(function (e) {
                                 if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {$("#errmsg").html("Digits Only").show().fadeOut("slow"); return false;
                                  }
-
-                                 
-                                
-                             });
                             });
                         </script>
 

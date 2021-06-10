@@ -11,7 +11,14 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            LblNoti.Text = "0";
+        }
 
+        public void notific(int cant)
+        {
+            /*
+            LblNoti.Text = noticontador().tostring();
+            */
         }
     }
 }

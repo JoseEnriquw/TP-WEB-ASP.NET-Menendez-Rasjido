@@ -56,7 +56,9 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">INICIO</a></li>
                         <li><a runat="server" href="~/Catalogo">CATALOGO DE PRODUCTOS</a></li>
-                        <li><a runat="server" href="~/Carrito de Compra">TU CARRITO DE COMPRAS</a></li>
+                        <li><a runat="server" href="~/Carrito de Compra">TU CARRITO DE COMPRAS 
+                            <asp:Label  CssClass="noti" Text="1" runat="server" ID="LblNoti"/></a>  
+                        </li>
                     </ul>
                 </div>
             </div>

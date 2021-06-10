@@ -18,9 +18,6 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticulosBussines negocio = new ArticulosBussines();
-
-
-
             try
             {
                 listaCatalogo = negocio.listar("");

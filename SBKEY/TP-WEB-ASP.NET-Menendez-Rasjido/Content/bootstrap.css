@@ -8509,8 +8509,8 @@ table {
     }
 
 .img-div {
-    width: 250px;
-    height: 250px;
+    width: 160px;
+    height: 160px;
 }
 
 .event_thumb {
@@ -8608,4 +8608,13 @@ body {
     color: #fff;
     border: 3px solid #000;
     background: #008d18;
+}
+
+.noti {
+    background: #ff0000;
+    width: 4px;
+    height: 2px;
+    border: #000;
+    border-radius: 20px;
+    color: #fff;
 }
