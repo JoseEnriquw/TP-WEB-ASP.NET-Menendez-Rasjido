@@ -27,9 +27,26 @@
             <h3 class="list-h3">PRECIOS</h3>
             <ul class="list-group">
                 <asp:Label CssClass="lblfilter" Text="Desde:" runat="server" /> 
-                <asp:TextBox CssClass="filter" ID="TextBox1" runat="server" Text="" OnTextChanged="filterprecio"></asp:TextBox>
+                <asp:TextBox CssClass="filter" TextMode="Number" name="PrecioMin" ID="TextBox1" runat="server" Text="" OnTextChanged="filterprecio" AutoPostBack="true"></asp:TextBox>
+                <script>
+                            $(document).ready(function () {
+                                $("#PrecioMin").keypress(function (e) {
+                                if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {$("#errmsg").html("Digits Only").show().fadeOut("slow"); return false;
+                                }
+                             });
+                            });
+                </script>
                 <asp:Label CssClass="lblfilter" Text="Hasta:" runat="server" />
-                <asp:TextBox CssClass="filter" ID="TextBox2" runat="server" Text="" OnTextChanged="filterprecio"></asp:TextBox>
+                <asp:TextBox CssClass="filter" TextMode="Number" name="PrecioMax" ID="TextBox2" runat="server" Text="" OnTextChanged="filterprecio" AutoPostBack="true"></asp:TextBox>
+                <script>
+                    $(document).ready(function () {
+                        $("#PrecioMax").keypress(function (e) {
+                            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                                $("#errmsg").html("Digits Only").show().fadeOut("slow"); return false;
+                            }
+                        });
+                    });
+                </script>
             </ul>
                 <h3 class="list-h3">CATEGORIAS</h3>
             <ul class="list-group">
@@ -55,7 +72,9 @@
     <div class="col-lg-3 col-md-4 col-sm-12">
         <div class="card">
             <section id="<% =item.ID %>">
-            <img src="<% =item.URLimagen %>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" class="card-img-top" alt="..." />
+                <div class="img-div">
+                    <img src="<% =item.URLimagen %>" onerror="this.src='https://i.postimg.cc/FKLCS5hD/404.png'" class="card-img-top" alt="..." />
+                </div>
              </section>
             <div class="card-body">
                 
@@ -76,4 +95,3 @@
 </div>
     
 </asp:Content>
-

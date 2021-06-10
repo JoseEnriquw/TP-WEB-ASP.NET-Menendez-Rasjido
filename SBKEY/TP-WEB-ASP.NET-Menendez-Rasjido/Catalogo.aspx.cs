@@ -19,12 +19,12 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
         {
             ArticulosBussines negocio = new ArticulosBussines();
 
-           
+
 
             try
             {
                 listaCatalogo = negocio.listar("");
-               
+
                 Session.Add("ListadoProducto", listaCatalogo);
 
                 if (DropDownList2.Text == "" && DropDownList3.Text == "")
@@ -41,7 +41,6 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
                     foreach (Dominio.Categorias_y_Marcas item in listafiltros)
                     {
                         DropDownList2.Items.Add(item.Nombre);
-                      
                     }
 
                     listafiltros = negocio.listar2("select * from Marcas");
@@ -57,7 +56,6 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
             catch (Exception ex)
             {
                 Session.Add("Error", ex.ToString());
-                Response.Redirect("Default.aspx");
             }
 
         }
@@ -157,13 +155,13 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
                     if (DropDownList3.Text != "NONE") listaCatalogo = negocio.listar("where c.descripcion = '" + DropDownList2.Text + "' and m.descripcion = '" + DropDownList3.Text + "' ");
                     else listaCatalogo = negocio.listar("where c.descripcion = '" + DropDownList2.Text + "'");
 
-                   
+
                 }
                 else if (DropDownList3.Text != "NONE")
                 {
                     listaCatalogo = negocio.listar("where M.descripcion= '" + DropDownList3.Text + "'");
                 }
-                else 
+                else
                 {
                     filterDefault(sender, e);
                 }
@@ -180,7 +178,7 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
 
             try
             {
-                if (DropDownList3.Text != "NONE" )
+                if (DropDownList3.Text != "NONE")
                 {
                     if (DropDownList2.Text != "NONE") listaCatalogo = negocio.listar("where M.descripcion= '" + DropDownList3.Text + "' and c.descripcion = '" + DropDownList2.Text + "'");
                     else listaCatalogo = negocio.listar("where M.descripcion= '" + DropDownList3.Text + "'");
@@ -191,7 +189,7 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
                 {
                     listaCatalogo = negocio.listar("where c.descripcion = '" + DropDownList2.Text + "'");
                 }
-                else 
+                else
                 {
                     filterDefault(sender, e);
                 }
@@ -208,15 +206,15 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
             ArticulosBussines negocio = new ArticulosBussines();
             if (TextBox1.Text.Length != 0 && TextBox2.Text.Length != 0)
             {
-                listaCatalogo = negocio.listar("where a.precio between " + TextBox1.Text + " and " + TextBox2.Text);
+                listaCatalogo = negocio.listar("where a.precio between " + decimal.Parse(TextBox1.Text) + " and " + decimal.Parse(TextBox2.Text));
             }
             else if (TextBox1.Text.Length != 0)
             {
-                listaCatalogo = negocio.listar("where a.precio <= " + TextBox1.Text);
+                listaCatalogo = negocio.listar("where a.precio >= " + decimal.Parse(TextBox1.Text));
             }
             else if (TextBox2.Text.Length != 0)
             {
-                listaCatalogo = negocio.listar("where a.precio >= " + decimal.Parse(TextBox2.Text));
+                listaCatalogo = negocio.listar("where a.precio <= " + decimal.Parse(TextBox2.Text));
             }
             else
             {

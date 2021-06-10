@@ -1,10 +1,10 @@
 use master
 go
-create database CATALOGO_DB
+create database CATALOGO_NUEVO_PC
 go
-use CATALOGO_DB
+use CATALOGO_NUEVO_PC
 go
-USE [CATALOGO_DB]
+USE [CATALOGO_NUEVO_PC]
 GO
 
 SET ANSI_NULLS ON
@@ -30,7 +30,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-USE [CATALOGO_DB]
+USE [CATALOGO_NUEVO_PC]
 GO
 
 /****** Object:  Table [dbo].[CATEGORIAS]    Script Date: 08/09/2019 10:32:14 a.m. ******/
@@ -57,7 +57,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-USE [CATALOGO_DB]
+USE [CATALOGO_NUEVO_PC]
 GO
 
 /****** Object:  Table [dbo].[ARTICULOS]    Script Date: 08/09/2019 10:32:24 a.m. ******/
@@ -90,25 +90,65 @@ GO
 SET ANSI_PADDING OFF
 GO
 
-insert into MARCAS values ('Samsung'), ('Apple'), ('Sony'), ('Huawei'), ('Motorola')
-insert into CATEGORIAS values ('Celulares'),('Televisores'), ('Media'), ('Audio')
-insert into ARTICULOS values ('S01', 'Galaxy S10', 'Una canoa cara', 1, 1, 'https://images.samsung.com/is/image/samsung/co-galaxy-s10-sm-g970-sm-g970fzyjcoo-frontcanaryyellow-thumb-149016542', 69.999),
-('M03', 'Moto G Play 7ma Gen', 'Ya siete de estos?', 1, 5, 'https://www.motorola.cl/arquivos/moto-g7-play-img-product.png?v=636862863804700000', 15699),
-('S99', 'Play 4', 'Ya no se cuantas versiones hay', 3, 3, 'https://www.euronics.cz/image/product/800x800/532620.jpg', 35000),
-('S56', 'Bravia 55', 'Alta tele', 3, 2, 'https://intercompras.com/product_thumb_keepratio_2.php?img=images/product/SONY_KDL-55W950A.jpg&w=650&h=450', 49500),
-('A23', 'Apple TV', 'lindo loro', 2, 3, 'https://cnnespanol2.files.wordpress.com/2015/12/gadgets-mc3a1s-populares-apple-tv-2015-18.jpg?quality=100&strip=info&w=460&h=260&crop=1', 7850)
+insert into MARCAS values
+('CPU'),
+('Mother'),
+('RAM'),
+('HDD'),
+('SSD'),
+('GPU')
+insert into CATEGORIAS values 
+('AMD'),
+('Asrock'),
+('MSI'),
+('Asus'),
+('Gigabyte'),
+('Kingston'),
+('HP'),
+('Patriot'),
+('Corsair'),
+('Spectrix'),
+('Seagate'),
+('WD'),
+('Nvidia'),
+('Intel')
+
+insert into ARTICULOS values
+('RZ5-3600',	'Ryzen 5 3600',		'6Nucleos - 12Hilos - 3.6GHz.',	1,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/micro-amd-ryzen-5-3600-0.jpg',								33290),
+('RZ7-3700',	'Ryzen 7 3700',		'8Nucleos - 16Hilos - 3.6GHz.',	1,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/micro-amd-ryzen-7-3800xt-0.jpg',							47000),
+('RZ9-3900',	'Ryzen 9 3900',		'12Nucleos - 24Hilos -3.1GHz.',	1,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/micro-amd-ryzen-9-3900x-0.jpg',							75190),
+('ASR-A520',	'Asrock A520M',		'Socket 2000, 3000, 4000 y 5000',	2,	2,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/mother-asrock-a520mhvs-0.jpg',								7320),
+('MSI-A520',	'Msi A520M',		'3ra Generacion y 4000G',	3,	2,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/mother-msi-a520ma-pro-am4-0.jpg',							8590),
+('ASU-A520',	'Asus A520M',		'2da y 3ra Generacion',	4,	2,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/mother-asus-a520mk-am4-0.jpg',								8837),
+('GIG-B450',	'Gigabyte B450',	'2da y 3ra Generacion',	5,	2,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/mother-gigabyte-b450m-ds3h-v2-soporta-amd-5000-0.jpg',		10020),
+('ASU-B450',	'Asus B450',		'Chipset AMD',	4,	2,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/mother-asus-b450ma-prime-am4-0.jpg',						10938),
+('ASR-B550',	'Asrock B550',		'Chipset AMD',	2,	2,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/mother-asrock-b550-pro4-0.jpg',							20450),
+('ASU-B550',	'Asus B550',		'Compatible con AMD e Intel',	4,	2,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/mother-asus-b550mplus-tuf-gaming-0.jpg',					21032),
+('MSI-B550',	'Msi B550',			'Solucion termica - AMD',	3,	2,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/mother-msi-b550-tomahawk-am4-3-generacion-0.jpg',			23409),
+('GIG-B550',	'Gigabyte B550',	'3ra generacion',	5,	2,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/mother-gigabyte--b550-aorus-elite-ax-v-0.jpg',				27360),
+('DDR4-FURY4',	'4GB Kinston Fury',	'Velocidad de 1600 Mhz',	6,	3,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/memoria-4gb-ddr4-2666-kingston-fury-0.jpg',				3815),
+('DDR4-RED8',	'8GB HP RED',		'Velocidad de 2666 Mhz',	7,	3,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/memoria-8gb-ddr4-2666-mhz-hp-v6-red-0.jpg',				6174),
+('DDR4-PT8',	'8GB Patriot',		'Velocidad de 2666 Mhz',	8,	3,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/memoria-8gb-ddr4-2666-mhz-patriot-signature-premiun-0.jpg',6180),
+('DDR4-COR8',	'8GB Corsair Value','Velocidad de 3000 Mhz',	9,	3,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/memoria-8gb-ddr4-2400mhz-corsair-value-0.jpg',				6755),
+('DDR4-XPG8',	'8GB Gammix',		'Velocidad de 3000 Mhz',	10,	3,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/memoria-8gb-ddr4-3200mhz-adata-xpg-gammix-d10-0.jpg',		7418),
+('1TB-S',		'1TBSATA3',			'1,000,000 MB',	11,	4,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/disco-hdd-1tb-sata3-seagate-barracuda-0.jpg',				5160),
+('2TB-S',		'2TBSATA3',			'2,000,000 MB',	11,	4,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/disco-hdd-2tb-sata3-64mb-wd-blue-0.jpg',					8099),
+('6TB-WD',		'6TB WD RED',		'6,000,000 MB',	12,	4,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/disco-hdd-6tb-wd-red-nas-wd60efax-0.jpg',					40190),
+('6TB-WD-G',	'6TB WD GOLD',		'6,000,000 MB',	12,	4,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/disco-hdd-6tb-wd-gold-0.jpg',								82390),
+('14TB-WD',		'14TB WD PURPLE',	'14,000,000 MB',	12,	4,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/disco-hdd-14tb-wd-purple-videovigilancia-0.jpg',			103900),
+('SSD-G120',	'120GB Gigabyte',	'Escritura de 380MB/s',	5,	5,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/hd-ssd-120gb-gigabyte-0.jpg',								3540),
+('SSD-WD120',	'120GB WD Green',	'Escritura de 380MB/s',	5,	12,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/hd-ssd-120gb-wd-green-0.jpg',								3999),
+('SSD-K120',	'120GB Kingston',	'Escritura de 380MB/s',	5,	6,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/hd-ssd-120gb-kingston-a400-sata3-0.jpg',					3999),
+('SSD-HP120',	'120GB HP',			'Escritura de 380MB/s',	5,	7,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/hd-ssd-120gb-25-s600-hp-0.jpg',							3430),
+('NV-VENTUS',	'Ventus',			'1485 MHz 4GB',	6,	13,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/video-geforce-gtx-1650-4gb-msi-ventus-xs-oc-0.jpg',		89390),
+('NV-1660',		'GTX 1660',			'1500 MHz 6GB 24BK',	6,	13,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/video-geforce-gtx-1660-6gb-asus-phoenix-dual-0.jpg',		143900),
+('AD-570',		'570 RX',			'1168 MHz 8GB',	6,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/video-radeon-rx-570-8gb-gigabyte-oc-gaming-0.jpg',			152900),
+('NV-3060',		'3060 RTX',			'1780 MHz 12GB',	6,	13,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/video-geforce-rtx-3060-12gb-asus-rog-strix-0.jpg',			232500),
+('AD-6900',		'6900 XT',			'2285 MHz 12GB',	6,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/video-radeon-rx-6900xt-gigabyte-gaming-16gb-oc-0.jpg',		366900),
+('INT7-10700',	'Core I7 10700',	'4Nucleos - 8Hilos - 4.20GHz',	14,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/micro-intel-core-i7-10700-0.jpg',							43690),
+('INT9-10900',	'Core I9 10900',	'10Nucleos - 20Hilos - 3.30GHz',	14,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/micro-intel-core-i9-10850k-36ghz-20m-0.jpg',				58702),
+('INTCEL',		'Celeron',			'266MHz - 4Nucleos',	14,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/micro-intel-celeron-g5905-dc-35ghz-ideal-mineria-0.jpg',	9999),
+('INT3-10100',	'Core I3 10100',	'2Nucleos - 733MHz',	14,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/micro-intel-core-i3-10100f-svideo-0.jpg',					16490),
+('INT5-11400',	'Core I5 11400',	'4Nucleos - 4Hilos - 3.80GHz',	14,	1,	'https://www.fullh4rd.com.ar/img/productos/Pics_Prod/micro-intel-core-i5-11400-0.jpg',							36999)
 
 select * from ARTICULOS
-
---Consultas
-
---Listar todo
-select A.Id,A.Nombre,A.Descripcion,M.Descripcion 'Marca',C.Descripcion 'Categoria',A.ImagenUrl,A.Precio
-from ARTICULOS A
-inner join MARCAS M on M.Id=A.IdMarca
-inner join CATEGORIAS C on C.Id=A.IdCategoria
-
-select A.Id,A.Nombre,A.Descripcion,M.Descripcion 'Marca',C.Descripcion 'Categoria',A.ImagenUrl,A.Precio
-from ARTICULOS A
-inner join MARCAS M on M.Id=A.IdMarca
-inner join CATEGORIAS C on C.Id=A.IdCategoria

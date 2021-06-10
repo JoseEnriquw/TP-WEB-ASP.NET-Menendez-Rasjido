@@ -9,13 +9,13 @@ using System.IO;
 namespace Bussines
 {
     public class AccessData
-    {   
+    {
         private SqlConnection conexion;
         private SqlCommand comando;
         private SqlDataReader lector;
 
         //Inicia la conexion
-        public AccessData(string HOST,string BD)
+        public AccessData(string HOST, string BD)
         {
             string connection = "data source = " + HOST + "; initial catalog = " + BD + "; integrated security = true; ";
             conexion = new SqlConnection(connection);
@@ -44,7 +44,7 @@ namespace Bussines
         }
 
         //Retorna el lector
-        public SqlDataReader Lector{ get { return lector; }}
+        public SqlDataReader Lector { get { return lector; } }
 
         //Ejecuta la accion
         public void ejectutarAccion()

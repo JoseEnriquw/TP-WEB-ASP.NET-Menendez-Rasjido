@@ -14,8 +14,9 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
     {
         public List<Articulo> carritoLista;
         public List<ItemCarrito> itemsCarrito;
-        public List<ItemCarrito> itemAux;
+        public ItemCarrito itemAux;
         public List<Carrito> compra;
+        public int id;
         protected void Page_Load(object sender, EventArgs e)
         {
             carritoLista = (List<Articulo>)Session["listaCompra"];
@@ -38,17 +39,16 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
                     }
                     else
                     {
-                        itemAux = new List<ItemCarrito>();
-                        itemAux.Clear();
-
+                        itemAux = new ItemCarrito();
+                        
                         List<ItemCarrito> listadoOr = (List<ItemCarrito>)Session["ListaItems"];
                         int aux = int.Parse(Request.QueryString["id"]);
-                        itemAux.Add(listadoOr.Find(x => x.articulo.ID == aux));
+                        itemAux=listadoOr.Find(x => x.articulo.ID == aux);
 
-                        int cant = itemAux[0].cantidad + 1;
-                        decimal subt = itemAux[0].articulo.precio;
+                        int cant = itemAux.cantidad + 1;
+                        decimal subt = itemAux.articulo.precio;
                         subt = cant * subt;
-                        var replaceItem = new ItemCarrito { articulo = itemAux[0].articulo, cantidad = cant, precioSubTotal = subt };
+                        var replaceItem = new ItemCarrito { articulo = itemAux.articulo, cantidad = cant, precioSubTotal = subt };
 
                         var element = itemsCarrito.FirstOrDefault(i => i.articulo.ID == replaceItem.articulo.ID);
 
@@ -104,29 +104,36 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
             Page_Load(sender,e);
         }
 
+     
         protected void txtCantidad_TextChanged(object sender, EventArgs e)
         {
-            /*
+            
+
+
+
+
             int cantAux = int.Parse(((TextBox)sender).Text);
-            int aux = IDSELECCIONADO ??????????; ///NECESITO OBTENER EL DATO DE QUE "ARTICULO.ID" ESTOY SELECCIONANDO
+            int aux= ((TextBox)sender).MaxLength; ///NECESITO OBTENER EL DATO DE QUE "ARTICULO.ID" ESTOY SELECCIONANDO
 
             if (cantAux >= 1) { 
 
-            itemAux = new List<ItemCarrito>();
-            itemAux.Clear();
+            itemAux = new ItemCarrito();
+            
 
             List<ItemCarrito> listadoOr = (List<ItemCarrito>)Session["ListaItems"];
-            itemAux.Add(listadoOr.Find(x => x.articulo.ID == aux));
+            itemAux=listadoOr.Find(x => x.articulo.ID == aux);
 
-            cantAux = itemAux[0].cantidad + 1;
-            decimal subt = itemAux[0].articulo.precio;
+          
+            cantAux = (itemAux.cantidad) + 1;
+            decimal subt =itemAux.articulo.precio;
             subt = cantAux * subt;
-            var replaceItem = new ItemCarrito { articulo = itemAux[0].articulo, cantidad = cantAux, precioSubTotal = subt };
+            var replaceItem = new ItemCarrito { articulo = itemAux.articulo, cantidad = cantAux, precioSubTotal =  subt };
 
             var element = itemsCarrito.FirstOrDefault(i => i.articulo.ID == replaceItem.articulo.ID);
               
             itemsCarrito.Remove(element);
             itemsCarrito.Add(replaceItem);
+                Page_Load(sender, e);
             }
             else
             {
@@ -137,7 +144,9 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
                 repetidorCompra.DataSource = null;
                 repetidorCompra.DataSource = itemsCarrito;
                 repetidorCompra.DataBind();
-            }*/
+                Page_Load(sender, e);
+            }
+           
         }
 
 

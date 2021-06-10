@@ -1,4 +1,4 @@
-﻿<%@ Page EnableEventValidation="true" Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Carrito de Compra.aspx.cs" Inherits="TP_WEB_ASP.NET_Menendez_Rasjido.Carrito_de_Compra" %>
+﻿<%@ Page  Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Carrito de Compra.aspx.cs" Inherits="TP_WEB_ASP.NET_Menendez_Rasjido.Carrito_de_Compra" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class="jumbotron">
@@ -47,16 +47,21 @@
                     <td class="cart-item-list">
                         <a  href="Detalles de Productos.aspx?id=<%#Eval("articulo.ID")%>">
                             <img class="cart-item-list2" src="https://i.postimg.cc/xd0j382C/info.png" alt="..." /></a>
-
-                        <asp:TextBox TextMode="Number" name="ValNum" ID="txtCantidad" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged" />
-                         <script>
+                       
+                        <asp:TextBox TextMode="Number" name="ValNum" ID="txtCantidad" runat="server" AutoPostBack="true" OnTextChanged="txtCantidad_TextChanged"  MaxLength='<%#Eval("articulo.ID")%>'  />
+                    </td>/>
+                      
+                        <script>
                             $(document).ready(function () {
                              $("#ValNum").keypress(function (e) {
                                 if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {$("#errmsg").html("Digits Only").show().fadeOut("slow"); return false;
-                                }
+                                 }
+
+                                 
+                                
                              });
                             });
-                         </script>
+                        </script>
 
                         
                         <asp:ImageButton CssClass="cart-item-list2" ID="ImageButton1" ImageUrl="https://icons555.com/images/icons-red/image_icon_delete_pic_512x512.png"  
