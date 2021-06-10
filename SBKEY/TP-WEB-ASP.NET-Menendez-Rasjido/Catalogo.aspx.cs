@@ -29,6 +29,7 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
                     DropDownList2.Items.Add("NONE");
                     DropDownList3.Items.Add("NONE");
                     listdrop = true;
+                    listafiltros= new List<Categorias_y_Marcas>();
                 }
 
                 if (listdrop == true)
@@ -47,6 +48,7 @@ namespace TP_WEB_ASP.NET_Menendez_Rasjido
                         DropDownList3.Items.Add(item.Nombre);
 
                     }
+                   listdrop =false; 
                 }
 
             }
